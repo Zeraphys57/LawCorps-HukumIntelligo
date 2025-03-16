@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #2f2f2f;
+  --text-dark: #18181b;
+  --text-light: #71717a;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --dark-blue: #274470;
+  --light-blue: #0072A4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section_product {
+	padding: 80px;
+	margin-top: 5em;
+}
+
+#product_detail {
+	display: flex;	
+}
+
+#product_detail .big_img {
+	width: 40%;
+	margin-right: 50px;
+}
+
+.small_img {
+	display: flex;
+	justify-content: space-between;
+}
+
+.small_img_col {
+	flex-basis: 24%;
+	cursor: pointer;
+}
+
+#product_detail .product_des {
+	width: 50%;
+	padding-top: 30px;
+}
+
+#product_detail .product_des h4 {
+	padding: 40px 0 20px 0;
+}
+
+#product_detail .product_des h2 {
+	font-size: 26px;
+}
+
+#product_detail .product_des select {
+	display: block;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+}
+
+#product_detail .product_des input {
+	width: 50px;
+	height: 47px;
+	padding-left: 10px;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+#product_detail .product_des input:focus {
+	outline: none;
+}
+
+#product_detail .product_des button {
+	background-color: var(--dark-blue);
+	color: var(--white);
+}
+
+#product_detail .product_des span {
+	line-height: 10px;
+}

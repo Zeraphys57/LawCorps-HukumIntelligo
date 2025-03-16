@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #2f2f2f;
+  --text-dark: #18181b;
+  --text-light: #71717a;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --dark-blue: #274470;
+  --light-blue: #0072A4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+html,
+body {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: auto; 
+    margin-left: auto; 
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+    border-radius: 5px; 
+    backdrop-filter: blur(14px); 
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 10px; 
+    text-align: center; 
+  
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+  }
+  
+  .nav_logo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .nav_logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--header-font);
+    color: #274470;
+  }
+  
+  .nav_logo img{
+    width: 90px;
+    height: 60px;
+  }
+  .nav_logo a span{
+    color: #0072A4;
+  }
+
+  .nav_actionss {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 5em;
+    font-size: 1.5em;
+  }
+
+  .nav_actionss a {
+    color: var(--dark-blue);
+  }
+
+  .nav_actions a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 3%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 0;
+    background-color: #274470;
+    transition: 0.3s;
+  }
+  
+  .nav_actionss a:hover::after {
+    width: 8%;
+  }
+  
+  .nav_links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .link a {
+    position: relative;
+    padding: 10px 0;
+    color: #274470;
+    transition: 0.3s;
+  }
+  
+  .link a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 0;
+    background-color: #274470;
+    transition: 0.3s;
+  }
+  
+  .link a:hover::after {
+    width: 100%;
+  }
+  
+  .nav_btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: #274470 ;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+    border: none;
+  }
+  
+  .nav_btn1 {
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    color: #274470 ;
+    background-color: transparent;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+    border: 2px solid #274470;
+    margin-right: 16px;
+  }
+
+#banner{
+    margin: 7rem 9rem 0 9rem;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.banner-atas{
+    display: flex;
+    width: 100%;
+    column-gap: 1rem;
+}
+
+.main{  
+    width: 70%;
+    padding: 1rem 0 1rem 1rem;
+}
+
+.main img{
+    width: 100%;
+    height: 475px;
+    border-radius: 15px 0 0 15px;
+}
+
+.side{
+    width: 30%;
+    height: 500px;
+    padding: 1rem 1rem 1rem 0;
+}
+
+.side img{
+    height: 50%;
+    width: 100%;
+}
+
+.banner-bawah{
+    display: flex;
+    width: 100%;
+}
+
+.kanan-bawah{
+    width: 70%;
+}
+
+.kanan-bawah h1{
+    padding-left: 16px;
+    font-size: 2.5rem;
+}
+
+.kota{
+    color: #A0A4A8;
+    font-size: 1.5rem;
+    padding: 8px 16px 4px 16px;
+  }
+  
+  .kategori{
+    display: flex;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    color: #A0A4A8;
+    height: 1.5rem;
+    align-items: center;
+  }
+  
+  .kategori img{
+    width: 1.5rem; 
+    height: 1.5rem; 
+    margin-left: 0.5rem;
+  }
+  
+  .nm-kategori{
+    padding: 0;
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+
+.deskripsi{
+  padding: 0 1rem 0 1rem;
+  text-align: justify;
+}
+
+#fasilitas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 1rem;
+    column-gap: 0.5rem;
+}
+
+.kartu-fasilitas{
+    display: flex;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 15px;
+    align-items: center;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.kartu-fasilitas img{
+    width: 1.5rem; 
+    height: 1.5rem; 
+    margin-left: 0.5rem;
+    
+}
+
+.kartu-fasilitas label{
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.kiri-bawah{
+  width: 30%;
+}
+
+.harga{
+    padding: 0 1rem 1rem 1rem;
+    font-size: 0.8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+  
+.harga span{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.harga a{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.8rem;
+    background-color:var(--dark-blue);
+    color: var(--white);
+    border-radius: 15px;
+}
+
+#booking{
+  margin: 2rem 9rem 0 9rem;
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.kartu-tanggal{
+  display: inline-flex;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 20px 15px;
+}
+
+.kartu-tanggal .option{
+  background: var(--white);
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0 10px;
+  border: 2px solid #180f2f;
+  transition: all 0.5s ease;
+  margin: 0 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input#one:checked ~ .option-1,
+input#two:checked ~ .option-2,
+input#three:checked ~ .option-3,
+input#four:checked ~ .option-4,
+input#five:checked ~ .option-5,
+input#six:checked ~ .option-6,
+input#seven:checked ~ .option-7 {
+  background-color: var(--dark-blue);
+  border-color: var(--dark-blue);
+}
+
+input#one:checked ~ .option-1 p,
+input#two:checked ~ .option-2 p,
+input#three:checked ~ .option-3 p,
+input#four:checked ~ .option-4 p,
+input#five:checked ~ .option-5 p,
+input#six:checked ~ .option-6 p,
+input#seven:checked ~ .option-7 p {
+  color: var(--white);
+}
+
+.kartu-tanggal .option span {
+  font-size: 20px;
+}
+
+.kartu-lapangan{
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  column-gap: 1rem;
+}
+
+.lp-kiri{
+  width: 30%;
+}
+
+.lp-kiri img{
+  width: 100%;
+}
+
+.lp-kanan{
+  width: 70%;
+}
+
+.lp-kanan img{
+  width: 1.5rem; 
+  height: 1.5rem; 
+  margin-left: 0.5rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn{
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  border-radius: 15px;
+}
+
+.dropbtn1{
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  border-radius: 15px;
+}
+
+#reserveButton{
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  border-radius: 15px;
+}
+
+.reserveButton{
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  border-radius: 15px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  border: 1px solid var(--dark-blue);
+  padding: 10px;
+  margin: 10px;
+  width: 150px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card input{
+  display: none;
+}
+
+.card.selected {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.section_newsletter {
+  padding: 40px 40px;
+  margin-top: 5em;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(products/b14.png);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: var(--dark-blue);
+}
+
+.newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.newsletter p{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.newsletter p span{
+  color: #ffbd27;
+}
+
+.newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btnnn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: black;
+  background-color: var(--white);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+.newsletter button {
+  background-color: #088178;
+  color: var(--white);
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.newsletter .form {
+  display: flex;
+  width: 40%;
+}
+
+.section_footer {
+  padding: 60px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .logo{
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+footer .follow i {
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .install .row img {
+  border: 1px solid var(--dark-blue);
+  border-radius: 6px;
+}
+
+footer .install img {
+  margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: var(--dark-blue);
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+

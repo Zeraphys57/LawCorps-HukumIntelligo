@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/LawcorpsLogoRev.ico" type="image/x-icon" />
+  <meta name="description" content="Your website description" />
+  <meta name="keywords" content="keyword1, keyword2, keyword3" />
+  <link rel="stylesheet" href="page2.css" />
+  <link rel="stylesheet" href="page2MediaScreen.css" />
+  <link rel="stylesheet" href="shop.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="page2.js" defer></script>
+  <title>LawCorps</title>
+</head>
+<body>
+    <nav>
+      <div class="nav_logo">
+        <a href="../index.html#home">
+          <img src="../assets/logoRev2.png" alt="LawCorps Logo"></a>
+      </div>
+  
+      </div>
+      <div class="burger-container" onclick="toggleNav()">
+        <div class="burger"> 
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <ul class="nav_links" id="nav-links">
+        <li class="link"><a href="../index.html#home">Home</a></li>
+        <li class="link"><a href="../index.html#about">About Us</a></li>
+        <li class="link"><a href="../index.html#courts">Keunggulan</a></li>
+        <li class="link"><a href="../index.html#shop">Download</a></li>
+        <li class="link"><a href="../index.html#testimonial">Kritik & Saran</a></li>
+        <li class="link"><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  <section class="pageCardLayer">
+    <div class="pageCard-container" id="pageCardContainer1" onclick="cardClicked(1)">
+      <div class="pageCard">
+        <div class="neon-text">Contact Drafting</div>
+        <div class="text-content">Menyediakan pelatihan pembuatan kontak, agar kamu dapat memahami syarat, unsur dan struktur dari sebuah kontrak serta membuat kontrak</div>
+        <img src="../assets/ui2/kontrak drafting.jpeg" alt="Card 1 Image">
+        <div class="pageCard-content">
+        </div>
+      </div>
+    </div>
+  
+    <div class="pageCard-container" id="pageCardContainer2" onclick="cardClicked(2)">
+      <div class="pageCard">
+        <div class="neon-text">Legal Drafting</div>
+        <div class="text-content">Menyediakan pelatihan pembuatan produk hukum seperti rancangan peraturan perundang undangan, naskah akademik dan rancangan hukum lainnya</div>
+        <img src="../assets/ui2/legal drafting.jpeg" alt="Card 2 Image">
+        <div class="pageCard-content">
+        </div>
+      </div>
+    </div>
+  
+    <div class="pageCard-container" id="pageCardContainer3" onclick="cardClicked(3)">
+      <div class="pageCard">
+        <div class="neon-text">Legal opinion</div>
+        <div class="text-content">Memahami permasalahan hukum secara sistematis sangatlah krusial dalam menyelesaikan masalah. Kami menyediakan pelatihan membuat Legal Opinion sehingga kamu dapat menyusun permasalahan hukum secara sistematis dengan tujuan menemukan solusi dari permasalahan</div>
+        <img src="../assets/ui2/legal opinion.jpeg" alt="Card 3 Image">
+        <div class="pageCard-content">
+        </div>
+      </div>
+  </section>
+  
+  <div class="pageCardContentContainer" id="pageCardContentContainer"></div>
+  
+
+  <footer class="section_footer" id="contact">
+    <div class="col">
+      <img class="logo" src="../assets/LawcorpsLogoRev.png">
+      <h3><strong>Contact </strong></h3>
+      <p>lawcorps2023@gmail.com</p>
+      <div class="follow">
+        <h3>Follow us</h3>
+        <div class="icon">
+         <iconify-icon icon="logos:facebook"><a href="https://facebook.com" alt="facebook"></a></iconify-icon>
+         <iconify-icon icon="ri:twitter-x-line"><a href="https://x.com" alt="x"></a></iconify-icon>
+         <iconify-icon icon="skill-icons:instagram"><a href="https://instagram.com" alt="instagram"></a></iconify-icon>
+         <iconify-icon icon="logos:youtube-icon"><a href="https://youtube.com" alt="youtube"></a></iconify-icon>
+       </div>
+      </div>
+    </div>
+
+    <div class="col">
+      
+    </div>
+
+    <div class="col">
+    
+    </div>
+
+    <div class="coll install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+       <a href="https://appstore.com"><img src="../assets/app.jpg" alt="app store"></a>
+       <a href="https://play.google.com/"><img src="../assets/play.jpg" alt="play storev"></a>
+      </div>
+      <p>Secured Payment Gateways</p>
+      <a href="https://visa.com"><img src="../assets/pay.png" alt="Visa Payment"></a>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright © 2023. All rights reserved.</p>
+    </div>
+   </footer>
+
+   <button onclick="scrollToTop()" id="scrollToTopBtn">
+     <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/chevron-up.png" alt="chevron-up"/></button>
+     <a  href="https://icons8.com/icon/101314/chevron-up"></a><a href="https://icons8.com"></a>
+
+     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script src="page2.js"></script>
+ </body>
+</html>
+

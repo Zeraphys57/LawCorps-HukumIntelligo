@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="product.css">
+    <title>Lapanganqu</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <nav>
+        <div class="nav_logo">
+          <img src="assets\logoo.png" alt="">
+          <a href="index.html">LAPANGAN<span>QU</span></a>
+        </div>
+        <ul class="nav_links" id="nav-links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="index.html#about">About Us</a></li>
+          <li class="link"><a href="courts.html">Courts</a></li>
+          <li class="link"><a href="shop.html">Shop</a></li>
+          <li class="link"><a href="index.html#testimonial">Testimonials</a></li>
+          <li class="link"><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav_actionss nav_actions">
+          <span><a href="cart.html"><i class="ri-shopping-bag-3-fill"></i></a></span>
+        </div>
+      </nav>
+    </header>
+
+   <section id="product_detail" class="section_product">
+     <div class="big_img">
+       <img src="assets/topi.jpg" width="100%" id="mainImg">
+
+       <div class="small_img">
+         <div class="small_img_col">
+           <img src="assets/topi.jpg" width="100%" class="smallImg">
+         </div>
+         <div class="small_img_col">
+           <img src="assets/topi2.jpg" width="100%" class="smallImg">
+         </div>
+         <div class="small_img_col">
+           <img src="assets/topi3.jpg" width="100%" class="smallImg">
+         </div>
+         <div class="small_img_col">
+           <img src="assets/topi4.jpg" width="100%" class="smallImg">
+         </div>
+       </div>
+     </div>
+
+     <div class="product_des">
+       <h6>Home / Hat</h6>
+       <h4>MLB New York Yankess Day Glow Hat</h4>
+       <h2>$78.00</h2>
+       <select>
+         <option>Select Size</option>
+         <option>XL</option>
+         <option>XXL</option>
+         <option>Small</option>
+         <option>Large</option>
+       </select>
+       <input type="number" value="1">
+       <button class="btnnn">Add To Cart</button>
+       <h4>Product Details</h4>
+       <span>The MLB New York Yankees Day Glow Hat is a must-have accessory for fans. This vibrant and stylish hat not only showcases your team pride but also provides UV protection and comfort, making it perfect for sunny game days.</span>
+     </div>
+   </section>
+
+
+   <section class="section_newsletter newsletter">
+     <div class="newstext">
+       <h4>Sign Up For Newsletter</h4>
+       <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+     </div>
+     <div class="form">
+       <input type="text" placeholder="Your email address">
+       <button class="btnnn">Sign Up</button>
+     </div>
+   </section>
+
+   <footer class="section_footer">
+     <div class="col">
+       <img class="logo" src="assets/logo.png">
+       <h4>Contact</h4>
+       <p><strong>Address: </strong> Jl. Yam Sabran Komplek Villa Tanah Mas K7</p>
+       <p><strong>Hours: </strong> 10:00 - 18:00</p>
+       <div class="follow">
+         <h4>Follow us</h4>
+         <div class="icon">
+           <i class="ri-facebook-fill"></i>
+           <i class="ri-twitter-fill"></i>
+           <i class="ri-instagram-line"></i>
+           <i class="ri-pinterest-line"></i>
+           <i class="ri-youtube-fill"></i>
+         </div>
+       </div>
+     </div>
+
+     <div class="col">
+       <h4>About</h4>
+       <a href="#">About us</a>
+       <a href="#">Delivery Information</a>
+       <a href="#">Privacy Policy</a>
+       <a href="#">Terms & Conditions</a>
+       <a href="#">Contact Us</a>
+     </div>
+
+     <div class="col">
+       <h4>My Account</h4>
+       <a href="#">Sign In</a>
+       <a href="#">View Cart</a>
+       <a href="#">My Wishlist</a>
+       <a href="#">Track My Order</a>
+       <a href="#">Help</a>
+     </div>
+
+     <div class="coll install">
+       <h4>Install App</h4>
+       <p>From App Store or Google Play</p>
+       <div class="row">
+         <img src="assets/app.jpg">
+         <img src="assets/play.jpg">
+       </div>
+       <p>Secured Payment Gateways</p>
+       <img src="assets/pay.png">
+     </div>
+
+     <div class="copyright">
+       <p>Copyright © 2023 Web Design. All rights reserved.</p>
+     </div>
+   </footer>
+
+    <script type="text/javascript">
+      var main = document.getElementById("mainImg");
+      var small = document.getElementsByClassName("smallImg");
+
+      small[0].onclick = function() {
+        main.src = small[0].src;
+      }
+      small[1].onclick = function() {
+        main.src = small[1].src;
+      }
+      small[2].onclick = function() {
+        main.src = small[2].src;
+      }
+      small[3].onclick = function() {
+        main.src = small[3].src;
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>   
+</body>
